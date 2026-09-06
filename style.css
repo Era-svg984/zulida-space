@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* 🌈 Animated Gradient Background */
+.home {
+  height: 100vh;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a88, #ffb199);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* ✨ Soft overlay glow */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+/* 🧊 Center container */
+.container {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* 💎 Logo */
+.logo {
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* 🌸 Tagline */
+.tagline {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* 🔍 Search box */
+input {
+  width: 350px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* 🎯 Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px white;
+}
+
+/* 💙 Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 🎬 Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+/* 🌈 Results Page Background */
+.results-page {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff, #fbc2eb);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🔝 Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+}
+
+.top-bar h2 {
+  text-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+.top-bar input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* 📦 Results Container */
+.results-container {
+  margin: 40px auto;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+/* ✨ Welcome Text */
+#welcomeMsg {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* 🔗 Result Box */
+.result-box {
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.result-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px white;
+}
+
+.result-box a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
